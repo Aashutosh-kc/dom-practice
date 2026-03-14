@@ -1,8 +1,10 @@
 const userInput = document.getElementById('userInput');
 const list = document.getElementById('list');
 const btn =document.getElementById('btn');
-
-btn.addEventListener('click',function(){
+function addToDo(){
+	if(userInput.value ===''){
+		return;
+	}
 	const li = document.createElement('li');
 	const del = document.createElement('button');
 	li.textContent = userInput.value;
@@ -19,4 +21,13 @@ btn.addEventListener('click',function(){
 	li.addEventListener('click',function(){
 		li.classList.toggle('done');
 	})
+}
+
+btn.addEventListener('click',function(){
+	addToDo();
+})
+userInput.addEventListener('keydown',function(e){
+	if(e.key==="Enter"){
+		addToDo();
+	}
 })
