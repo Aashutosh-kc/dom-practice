@@ -15,11 +15,15 @@ function addToDo(){
 	list.appendChild(li);
 	del.addEventListener('click',function(e){
 		e.stopPropagation();
-		li.remove();
-	})
+		li.classList.add("removing");
+  		setTimeout(() => {
+    	li.remove();
+  		}, 250);
+	});
 	userInput.value = "";
 	li.addEventListener('click',function(){
 		li.classList.toggle('done');
+
 	})
 }
 
