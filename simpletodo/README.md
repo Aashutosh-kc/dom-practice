@@ -2,7 +2,7 @@
 A simple to-do list app where the users can add task and delete it, made with vanilla JavaScript.
 
 ## Live demo:
-https://aashutosh-kc.github.io/dom-practice/simpletodo/index.html
+https://aashutosh-kc.github.io/todo-list/simpletodo/index.html
 
 ![App screenshot](screenshot.jpg)
 
